@@ -1,0 +1,12 @@
+name = "chad-trader-api"
+main = "src/index.js"
+compatibility_date = "2026-06-25"
+
+[vars]
+SOLANA_CLUSTER = "mainnet-beta"
+
+# Add secrets with:
+# npx wrangler secret put BIRDEYE_API_KEY
+# npx wrangler secret put JUPITER_API_KEY
+# npx wrangler secret put SUPABASE_URL
+# npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY

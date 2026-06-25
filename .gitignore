@@ -1,41 +1,68 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# Dependencies
 node_modules/
+cloudflare-worker/node_modules/
 
 # Expo
 .expo/
 dist/
 web-build/
 expo-env.d.ts
+.expo-shared/
 
-# Native
+# Native build output and credentials
 .kotlin/
+.gradle/
+build/
+DerivedData/
+Pods/
 *.orig.*
 *.jks
+*.keystore
 *.p8
 *.p12
 *.key
 *.mobileprovision
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+android/app/debug.keystore
+ios/Pods/
+ios/build/
 
 # Metro
 .metro-health-check*
 
-# debug
+# Logs and test output
+*.log
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+coverage/
 
 # macOS
 .DS_Store
 *.pem
 
-# local env files
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
 .env*.local
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 
-# generated native folders
+# Cloudflare/Wrangler local state
+cloudflare-worker/.wrangler/
+cloudflare-worker/.dev.vars
+
+# Editors
+.idea/
+*.swp
+
+# Generated Expo native projects
 /ios
 /android
